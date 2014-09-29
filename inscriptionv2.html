@@ -41,7 +41,7 @@
     </div>
     <div class="container">
       <!-- Example row of columns -->
-      <form role="form">
+      <form role="form" id="formInscription">
       <div class="row">
       <div class="col-md-12">
         <h2>Profil</h2>
@@ -56,16 +56,18 @@
       <label for="pseudo">Pseudo *:</label>
       <input type="text" class="form-control" id="pseudo" placeholder="Saisissez votre pseudo ..." required/>
       <label for="pseudo">Email *:</label>
-      <input type="email" class="form-control" id="email" placeholder="Saisissez votre email ..." required/>
+      <input type="email" class="form-control" id="email"  placeholder="Saisissez votre email ..." required/>
       <label for="pseudo">Confirmer email *:</label>
-      <input type="email" class="form-control" id="email2" placeholder="Confirmez votre email ..." required/>
+      <input type="email" class="form-control" id="email2" placeholder="Confirmez votre email ..." required
+             data-toggle="popover" data-placement="botom" data-content="Different email"/>
          </div>
         </div>
         <div class="col-md-6">
         <label for="pseudo">Mot de passe *:</label>
       <input type="password" class="form-control" id="pwd" placeholder="Saisissez votre mot de passe ..." required/>
       <label for="pseudo">Confirmer mot de passe *:</label>
-      <input type="password" class="form-control" id="pwd2" placeholder="Confirmez votre mot de passe ..." required/>
+      <input type="password" class="form-control" id="pwd2" placeholder="Confirmez votre mot de passe ..." required
+             data-toggle="popover" data-placement="bottom" data-content="Different password"/>
 
           <h2>Adresse</h2>
       <label for="adresse">Adresse</label>
@@ -94,9 +96,11 @@
       </footer>
     </div> <!-- /container -->
 
+    <script style="display:none" src="js/inscription.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script  style="display:none">
+       
 <!--
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug
