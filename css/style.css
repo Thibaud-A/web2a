@@ -1,3 +1,41 @@
 footer#footer-page {
 	text-align: center;
 }
+
+.product{
+	min-height: 250px;
+}
+
+img.logo-product {
+	float: left;
+}
+
+span.price {
+	margin-left: 5%;
+	font-weight: bold;
+}
+
+
+.product-tools{
+	position: absolute;
+	bottom: 5;
+	right: 0;
+}
+
+
+.jumbotron p {
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.jumbotron span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#img-product{
+	margin: auto;
+	margin-top: 15px;
+	margin-left: 20px;
+}

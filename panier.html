@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>
+            Panier utilisateur - Projet web
+        </title>
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project Web</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="password" placeholder="Mot de passe" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">S'inscrire</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Panier</h1>
+        <h2>Contenu de votre panier</h2>
+      </div>
+    </div>
+    <div class="container">
+        <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nom du produit</th>
+          <th>Quantité</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="img/unknown2-little.png" alt="nom produit"/></td>
+          <td>Produit 1</td>
+          <td>
+          <select id="quantite" name="quantite">
+              <option>1</option>
+              <option>2</option>
+              <option selected="selected">3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td><a href="#" class="call-delete">Supprimer</a></td>
+        </tr>
+        <tr>
+          <td><img src="img/unknown2-little.png" alt="nom produit"/></td>
+          <td>Produit 1</td>
+          <td>
+          <select id="quantite" name="quantite">
+              <option selected="selected">1</option>
+              <option>2</option>
+              <option >3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td><a href="#" class="call-delete">Supprimer</a></td>
+        </tr>
+         <tr>
+          <td><img src="img/unknown2-little.png" alt="nom produit"/></td>
+          <td>Produit 1</td>
+          <td>
+          <select id="quantite" name="quantite">
+              <option>1</option>
+              <option>2</option>
+              <option >3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+            </select>
+          </td>
+          <td><a href="#" class="call-delete">Supprimer</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row">
+     <div class="col-md-12">
+      <h2>Produits conseillés :</h2>
+      <div class="row">
+      <div class="col-md-3 product">
+        <img class="logo-product" src="img/unknown2.png"  />
+        <h3 class="name-product">Produit 1</h3>
+      </div>
+      <div class="col-md-3 product">
+        <img class="logo-product" src="img/unknown2.png"  />
+        <h3 class="name-product">Produit 2</h3>
+      </div>
+      <div class="col-md-3 product">
+        <img class="logo-product" src="img/unknown2.png"  />
+        <h3 class="name-product">Produit 3</h3>
+      </div>
+      <div class="col-md-3 product">
+        <img class="logo-product" src="img/unknown2.png"  />
+        <h3 class="name-product">Produit 4</h3>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <footer id="footer-page">
+        <p>&copy; Company 2014 - <a href='#'>Plan de site </a> - <a href='#'> Mentions légales </a></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script  style="display:none">
+<!--
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014 Twitter, Inc.
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see http://creativecommons.org/licenses/by/3.0/.
+ */
+
+// See the Getting Started docs for more information:
+// http://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict';
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.querySelector('head').appendChild(msViewportStyle)
+  }
+})();
+
+//-->
+</script>
+  </body>
+</html>
