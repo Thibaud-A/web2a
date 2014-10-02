@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
    <head>
       <title>
@@ -40,38 +40,37 @@
       </div>
       <div class="jumbotron">
          <div class="container">
-            <h1>Accueil</h1>
+            <h1>Connexion</h1>
          </div>
       </div>
       <div class="container">
-         <div id="slider">
-            <link rel="stylesheet" href="css/slider.css">
-            <div class="container">
-               <div id="slides">
-                  <img src="img/ktm.jpg" >
-                  <img src="img/Ducati.jpg">
-                  <img src="img/mv.jpg">
-                  <img src="img/H2R.jpg">
-                  <a href="#" class="slidesjs-previous slidesjs-navigation"> < </a>
-                  <a href="#" class="slidesjs-next slidesjs-navigation"> > </a>
-               </div>
+         <div class="row">
+            <div class="col-md-12">
+               <form role="form" id="formInscription">
+                  <div class="form-group">
+                     <label for="pseudo">Pseudo *:</label>
+                     <input type="text" class="form-control" id="pseudo" placeholder="Saisissez votre pseudo ..." required/>
+                     <label for="pseudo">Mot de passe *:</label>
+                     <input type="text" class="form-control" id="pseudo" placeholder="Saisissez votre pseudo ..." required/>
+                  </div>
+               </form>
+               <button type="submit" class="btn btn-primary">Connexion</button>
             </div>
-            <script src="js/jquery.slides.min.js"></script>
          </div>
-         <script>
-            $(function() {
-                $('#slides').slidesjs({
-                    width: 840,
-                    height: 428,
-                    navigation: false
-                });
-            });
-         </script>
-         <footer id="footer-page">
-            <p>&copy; Company 2014 - <a href='#'>Plan de site </a> - <a href='#'> Mentions légales </a></p>
-         </footer>
       </div>
-      <!-- /container -->
+      <script>
+         $(function() {
+             $('#slides').slidesjs({
+                 width: 840,
+                 height: 428,
+                 navigation: false
+             });
+         });
+      </script>
+      <footer id="footer-page">
+         <p>&copy; Company 2014 - <a href='#'>Plan de site </a> - <a href='#'> Mentions légales </a></p>
+      </footer>
+      </div> <!-- /container -->
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script  style="display:none">
          <!--

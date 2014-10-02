@@ -39,3 +39,7 @@ span.price {
 	margin-top: 15px;
 	margin-left: 20px;
 }
+
+#validate-order{
+	float: right;
+}

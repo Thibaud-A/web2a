@@ -1,134 +1,136 @@
 ﻿<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>
-            Produit - Projet web
-        </title>
-        <script src="js/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/bootstrap.min.js"></script>
-    </head>
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <a class="navbar-brand" href="accueil.html">Accueil</a>
-            <a class="navbar-brand" href="listingProd.html">Catalogue</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-                <input type="text" placeholder="Pseudo" class="form-control">
-                <input type="password" placeholder="Mot de passe" class="form-control">
+   <head>
+      <title>
+         Produit - Projet web
+      </title>
+      <script src="js/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="sr-only">Menu</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="accueil.html">Accueil</a>
+               <a class="navbar-brand" href="listingProd.html">Catalogue</a>
             </div>
-            <button type="submit" class="btn btn-success">Connexion</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+            <div class="navbar-collapse collapse">
+               <form class="navbar-form navbar-right" role="form">
+                  <div class="form-group">
+                     <input type="text" placeholder="Recherche ..." class="form-control">
+                  </div>
+                  <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                  </button>   
+               </form>
+               <a class="navbar-brand navbar-right" href="inscriptionv2.html">S'inscrire</a>
+               <a class="navbar-brand navbar-right" href="connexion.html">Se connecter</a>
+            </div>
+            <!--/.navbar-collapse -->
+         </div>
       </div>
-    </div>
-    <div class="jumbotron">
+      <div class="jumbotron">
+         <div class="container">
+            <div class="col-md-6">
+               <img src="img/unknown2-huge.png" alt="Photo du produit" id="img-product" />
+            </div>
+            <div class="col-md-6">
+               <h2>Produit 1</h2>
+               <h3>Sous titre du produit</h3>
+               <p>
+                  <span>Description :</span><br/>
+                  The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.
+               </p>
+            </div>
+            <div class="col-md-6">
+               <form>
+                  <label for="quantite">Quantité : </label>
+                  <select id="quantite" name="quantite">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                  </select>
+                  <br/>
+                  <button type="submit" class="btn btn-primary">Ajouter</button>
+               </form>
+            </div>
+         </div>
+      </div>
       <div class="container">
-       <div class="col-md-6">
-         <img src="img/unknown2-huge.png" alt="Photo du produit" id="img-product" />
-       </div>
-        <div class="col-md-6">
-          <h2>Produit 1</h2>
-          <h3>Sous titre du produit</h3>
-          <p>
-            <span>Description :</span><br/>
-            The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-        </div>
-        <div class="col-md-6">
-              <form>
-            <label for="quantite">Quantité : </label>
-            <select id="quantite" name="quantite">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            <br/>
-            <button type="submit" class="btn btn-primary">Ajouter</button>
-          </form> 
-          </div>
+         <div class="row">
+            <div class="col-md-12">
+               <h2>Nos conseils</h2>
+               <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
+               <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <h2>Produits conseillés :</h2>
+               <div class="row">
+                  <div class="col-md-3 product">
+                     <img class="logo-product" src="img/unknown2.png"  />
+                     <h3 class="name-product">Produit 1</h3>
+                  </div>
+                  <div class="col-md-3 product">
+                     <img class="logo-product" src="img/unknown2.png"  />
+                     <h3 class="name-product">Produit 2</h3>
+                  </div>
+                  <div class="col-md-3 product">
+                     <img class="logo-product" src="img/unknown2.png"  />
+                     <h3 class="name-product">Produit 3</h3>
+                  </div>
+                  <div class="col-md-3 product">
+                     <img class="logo-product" src="img/unknown2.png"  />
+                     <h3 class="name-product">Produit 4</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer id="footer-page">
+            <p>&copy; Company 2014 - <a href='#'>Plan de site </a> - <a href='#'> Mentions légales </a></p>
+         </footer>
       </div>
-    </div>
-    <div class="container">
-    <div class="row">
-     <div class="col-md-12">
-      <h2>Nos conseils</h2>
-      <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-      <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    </div>
-     
-    </div>
-    <div class="row">
-     <div class="col-md-12">
-      <h2>Produits conseillés :</h2>
-      <div class="row">
-      <div class="col-md-3 product">
-        <img class="logo-product" src="img/unknown2.png"  />
-        <h3 class="name-product">Produit 1</h3>
-      </div>
-      <div class="col-md-3 product">
-        <img class="logo-product" src="img/unknown2.png"  />
-        <h3 class="name-product">Produit 2</h3>
-      </div>
-      <div class="col-md-3 product">
-        <img class="logo-product" src="img/unknown2.png"  />
-        <h3 class="name-product">Produit 3</h3>
-      </div>
-      <div class="col-md-3 product">
-        <img class="logo-product" src="img/unknown2.png"  />
-        <h3 class="name-product">Produit 4</h3>
-      </div>
-    </div>
-    </div>
-    </div>
-    <footer id="footer-page">
-        <p>&copy; Company 2014 - <a href='#'>Plan de site </a> - <a href='#'> Mentions légales </a></p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script  style="display:none">
-<!--
-/*!
- * IE10 viewport hack for Surface/desktop Windows 8 bug
- * Copyright 2014 Twitter, Inc.
- * Licensed under the Creative Commons Attribution 3.0 Unported License. For
- * details, see http://creativecommons.org/licenses/by/3.0/.
- */
-
-// See the Getting Started docs for more information:
-// http://getbootstrap.com/getting-started/#support-ie10-width
-
-(function () {
-  'use strict';
-  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-    var msViewportStyle = document.createElement('style')
-    msViewportStyle.appendChild(
-      document.createTextNode(
-        '@-ms-viewport{width:auto!important}'
-      )
-    )
-    document.querySelector('head').appendChild(msViewportStyle)
-  }
-})();
-
-//-->
-</script>
-  </body>
+      <!-- /container -->
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script  style="display:none">
+         <!--
+            /*!
+             * IE10 viewport hack for Surface/desktop Windows 8 bug
+             * Copyright 2014 Twitter, Inc.
+             * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+             * details, see http://creativecommons.org/licenses/by/3.0/.
+             */
+            
+            // See the Getting Started docs for more information:
+            // http://getbootstrap.com/getting-started/#support-ie10-width
+            
+            (function () {
+              'use strict';
+              if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                  document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                  )
+                )
+                document.querySelector('head').appendChild(msViewportStyle)
+              }
+            })();
+            
+            //-->
+      </script>
+   </body>
 </html>
